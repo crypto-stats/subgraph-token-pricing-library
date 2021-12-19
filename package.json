@@ -1,0 +1,16 @@
+{
+  "name": "subgraph-token-pricing-test",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ dmihal/subgraph-token-pricing-test",
+    "create-local": "graph create --node http://localhost:8020/ dmihal/subgraph-token-pricing-test",
+    "remove-local": "graph remove --node http://localhost:8020/ dmihal/subgraph-token-pricing-test",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 dmihal/subgraph-token-pricing-test"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.25.1",
+    "@graphprotocol/graph-ts": "0.24.1"
+  }
+}
